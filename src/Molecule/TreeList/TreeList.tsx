@@ -1,4 +1,3 @@
-// TreeList.tsx
 import React, { useContext, useEffect } from 'react';
 import { TreeContext, actionTypes } from './TreeContext';
 import { getTreeWalkData, randomOrgData } from '../../Utils';

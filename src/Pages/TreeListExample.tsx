@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, TreeList } from '../Molecule'
 import { TreeListItemProps } from '../Models';
 
-
 const TreeListItem: React.FC<TreeListItemProps> = ({
     node,
     handleToggleExpand,

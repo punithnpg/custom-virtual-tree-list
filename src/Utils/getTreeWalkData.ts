@@ -2,15 +2,14 @@ import { TreeNode, TreeWalkNode } from "../Models/Tree/Tree.model";
 
 export function getTreeWalkData<T>(data: TreeNode<T>[]): TreeWalkNode<T>[] {
     const renderingData: TreeWalkNode<T>[] = [];
-  
 
     function calculateTotalChildren(node: TreeNode<T>): number {
       let totalChildren = 0;
   
       if (node.children && node.children.length > 0) {
         node.children.forEach((child) => {
-          totalChildren++; // Increment for the current child
-          totalChildren += calculateTotalChildren(child); // Recursively calculate children of the child
+          totalChildren++; 
+          totalChildren += calculateTotalChildren(child);
         });
       }
   
